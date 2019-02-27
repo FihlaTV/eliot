@@ -10,7 +10,7 @@ import eliot from 'ELIOT/eliot';
 /**
  * @constructor
  */
-class EliotModel  {
+export class EliotModel  {
 
   constructor() {
     //TODO
@@ -22,11 +22,9 @@ class EliotModel  {
   }
 
   // @public
-  step( dt ) {
+  step( dt: number ) {
     //TODO Handle model animation here.
   }
 }
 
 eliot.register( 'EliotModel', EliotModel );
-
-export default EliotModel;

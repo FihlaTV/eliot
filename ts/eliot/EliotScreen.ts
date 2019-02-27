@@ -8,7 +8,7 @@
 import Property from 'AXON/Property';
 import Screen from 'JOIST/Screen';
 import eliot from 'ELIOT/eliot';
-import EliotModel from 'ELIOT/eliot/model/EliotModel';
+import { EliotModel } from 'ELIOT/eliot/model/EliotModel';
 import EliotScreenView from 'ELIOT/eliot/view/EliotScreenView';
 
 class EliotScreen extends Screen {
@@ -21,7 +21,7 @@ class EliotScreen extends Screen {
 
     super(
       () => new EliotModel(),
-      <EliotModel>( model: EliotModel ) => new EliotScreenView( model ),
+      ( model: EliotModel ) => new EliotScreenView( model ),
       options
     );
   }

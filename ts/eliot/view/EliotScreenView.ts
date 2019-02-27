@@ -9,7 +9,7 @@
 import ResetAllButton from 'SCENERY_PHET/buttons/ResetAllButton';
 import ScreenView from 'JOIST/ScreenView';
 import eliot from 'ELIOT/eliot';
-import EliotModel from "ELIOT/eliot/model/EliotModel";
+import { EliotModel } from "ELIOT/eliot/model/EliotModel";
 
 class EliotScreenView extends ScreenView {
 
